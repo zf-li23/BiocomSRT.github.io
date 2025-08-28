@@ -1,0 +1,12 @@
+- name: 首页
+  link: /
+- name: 功能模块
+  link: /modules.html
+- name: 技术实现
+  link: /technology.html
+- name: 可行性分析
+  link: /feasibility.html
+- name: 创新点
+  link: /innovation.html
+- name: 关于
+  link: /about.html
