@@ -9,10 +9,6 @@ title: 首页
       <div class="col-md-6">
         <h1 class="display-4 fw-bold mb-4">基于生物计算与多维度加权的个性化养老服务智能推荐系统</h1>
         <p class="lead mb-4">利用先进生物计算技术与多维度加权算法，为老年人提供科学、个性化的健康管理建议和服务推荐。</p>
-        <a href="/modules.html" class="btn btn-primary btn-lg">了解功能模块</a>
-      </div>
-      <div class="col-md-6">
-        <img src="https://via.placeholder.com/500x300" alt="项目示意图" class="img-fluid rounded">
       </div>
     </div>
   </div>
