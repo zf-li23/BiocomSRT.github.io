@@ -1,0 +1,27 @@
+title: 基于生物计算与多维度加权的个性化养老服务智能推荐系统
+description: 跨学科融合创新的个性化养老服务推荐系统
+baseurl: ""
+url: "https://yourdomain.com"
+markdown: kramdown
+
+# 导航
+navbar:
+  - title: 首页
+    url: /
+  - title: 功能模块
+    url: /modules.html
+  - title: 技术实现
+    url: /technology.html
+  - title: 可行性分析
+    url: /feasibility.html
+  - title: 创新点
+    url: /innovation.html
+  - title: 关于
+    url: /about.html
+
+# 主题颜色
+colors:
+  primary: "#3f51b5"
+  secondary: "#ff4081"
+  dark: "#212121"
+  light: "#f5f5f5"
