@@ -1,35 +1,90 @@
 ---
 ---
 
-// 自定义颜色
-$primary: #3f51b5;
-$secondary: #ff4081;
-$dark: #212121;
-$light: #f5f5f5;
-
-// 自定义样式
-body {
-  font-family: 'Noto Sans SC', sans-serif;
-  color: $dark;
+/* 1. 颜色体系 */
+:root {
+  --primary: #3f51b5;
+  --secondary: #ff4081;
+  --dark: #212121;
+  --light: #f5f5f5;
+  --muted: #9e9e9e;
+  --bg: #ffffff;
 }
 
+/* 2. 全局排版 */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans SC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--dark);
+  background: var(--bg);
+}
+
+/* 3. 头部英雄区 */
 .hero-section {
-  background: linear-gradient(135deg, rgba($primary, 0.1) 0%, rgba($secondary, 0.1) 100%);
-}
-
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, rgba(var(--primary), 0.1) 0%, rgba(var(--secondary), 0.1) 100%);
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  p {
+    font-size: 1.1rem;
+    color: var(--muted);
+    margin: 0.5rem 0 0;
   }
 }
 
-.navbar-brand {
-  font-weight: 700;
+/* 4. 导航栏 */
+.navbar {
+  background: var(--bg);
+  box-shadow: 0 1px 3px rgba(0,0,0,.05);
+  .navbar-brand {
+    font-weight: 700;
+    color: var(--primary);
+  }
 }
 
+/* 5. 卡片 */
+.card {
+  border: none;
+  border-radius: 8px;
+  background: var(--bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  transition: transform .3s, box-shadow .3s;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0,0,0,.12);
+  }
+  .card-body { padding: 1.5rem; }
+}
+
+/* 6. 按钮 */
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  &:hover { background: darken(#3f51b5,6%); }
+}
+
+/* 7. 页脚 */
 footer {
   margin-top: auto;
+  background: var(--light);
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+/* 8. 响应式微调 */
+@media (max-width: 600px) {
+  .hero-section h1 { font-size: 2rem; }
 }
