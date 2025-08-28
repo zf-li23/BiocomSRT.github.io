@@ -1,5 +1,7 @@
 - name: 首页
   link: /
+- name: 健康评估
+  link: /assessment.html
 - name: 功能模块
   link: /modules.html
 - name: 技术实现
