@@ -1,11 +1,10 @@
-<nav>
-  <ul class="nav">
-    {% for item in site.navbar %}
-    <li class="nav-item">
-      <a class="nav-link text-white {% if page.url == item.url %}active{% endif %}" href="{{ item.url | relative_url }}">
-        {{ item.title }}
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <div>
+      {% for item in site.navbar %}
+        <a class="nav-link px-3" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+      {% endfor %}
+    </div>
+  </div>
 </nav>
